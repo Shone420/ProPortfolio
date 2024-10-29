@@ -1,8 +1,7 @@
 import mainimage from "../public/mainpic.png";
 import logo from "../public/logo.png";
-// import { Link } from "react-router-dom";
 
-
+import { Link } from "react-router-dom";
 
 const Firstpage = () => {
   // Gallery Scroll function
@@ -37,13 +36,19 @@ const Firstpage = () => {
         {/* Logo Section */}
         <div className="logo-div">
           <div>
-            <img src={logo} alt="" className="logo-deets"/>
+            <img src={logo} alt="" className="logo-deets" />
           </div>
         </div>
         {/* Text Section */}
         <div className="about-head">
-          <div onClick={() => AboutScroll()}>About</div>
-          <div className="about-deets">Projects</div>
+          <div className="about-deets" onClick={() => AboutScroll()}>About</div>
+          <div className="about-deets">
+            <Link to="/Projects" style={{ textDecoration: "none", color: "#FFF" }}>
+              <span>
+                Projects
+              </span>
+            </Link>
+          </div>
           <div className="about-deets" onClick={() => GalleryScroll()}>
             Gallery
           </div>
@@ -54,7 +59,8 @@ const Firstpage = () => {
       </div>
       {/* Second Section */}
       <div className="flex-display-class">
-        <div style={{
+        <div
+          style={{
             color: "#FFFFFF",
             position: "absolute",
             left: "10%",
@@ -112,10 +118,8 @@ const Firstpage = () => {
           /> */}
         </div>
       </div>
-    
-
     </div>
   );
-}
+};
 
 export default Firstpage;

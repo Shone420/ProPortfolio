@@ -41,6 +41,7 @@ width: 50%;
 }
 
 .about-deets {
+  cursor: pointer;
   margin-left: 60px;
   }
 

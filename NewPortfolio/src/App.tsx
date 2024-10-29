@@ -20,7 +20,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/ProPortfolio"
+          path="/ProPortfolio/"
           element={
             <div>
               <Firstpage />
@@ -30,6 +30,7 @@ function App() {
             </div>
           }
         />
+        <Route path="/Projects" element={<Projects/>} />
       </Routes>
 
       <footer

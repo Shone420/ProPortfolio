@@ -1,8 +1,8 @@
-
 import picture2 from "../public/Picture 2 - Defines Me.jpg";
 import picture3 from "../public/Picture 3- Aesthetic.jpeg";
-import corporateheadshotpicture1 from "../public/Corporate Headshot Picture 1.png"
-import Homeicon from "../public/Homeicon.png"
+import corporateheadshotpicture1 from "../public/Corporate Headshot Picture 1.png";
+import Homeicon from "../public/Homeicon.png";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import { useEffect } from "react";
 
@@ -31,7 +31,7 @@ const Thirdpage = () => {
             display: "flex",
             justifyContent: "center",
             fontSize: "35px",
-            fontWeight: "600"
+            fontWeight: "600",
           }}
         >
           Interactive Media Project- Photography
@@ -203,7 +203,7 @@ const Thirdpage = () => {
               }}
             />
           </div>
-      
+
           <div>
             <img
               src={corporateheadshotpicture1}
@@ -218,20 +218,20 @@ const Thirdpage = () => {
             />
           </div>
           <div>
-           
-            <img
-              src={Homeicon}
-              alt=""
-              style={{
-                position: "absolute",
-                left: "94%",
-                top: "5%",
-                width: "50px",
-                height: "auto",
-              }}
-            />
+            <Link to="/ProPortfolio">
+              <img
+                src={Homeicon}
+                alt=""
+                style={{
+                  position: "absolute",
+                  left: "94%",
+                  top: "5%",
+                  width: "50px",
+                  height: "auto",
+                }}
+              />
+            </Link>
           </div>
-
         </div>
         <div
           style={{
@@ -260,34 +260,32 @@ const Thirdpage = () => {
             This corporate headshot blends simplicity with professionalism,
             capturing me as relaxed yet
             <br />
-             confident. The clean, minimalist background keeps the
-            focus on the subject, presenting a
+            confident. The clean, minimalist background keeps the focus on the
+            subject, presenting a
             <br />
-             polished appearance.To achieve this image, I selected an ISO of 125, ensuring clarity
-            without
+            polished appearance.To achieve this image, I selected an ISO of 125,
+            ensuring clarity without
             <br />
-             introducing noise, which preserves the natural look and fine
+            introducing noise, which preserves the natural look and fine
             details. The 32mm focal length
             <br />
-             was ideal for this shot, providing detail
-            while avoiding distortion, crucial for a headshot.
+            was ideal for this shot, providing detail while avoiding distortion,
+            crucial for a headshot.
             <br />
-             I chose an aperture of f/1.78 to
-            create a gentle blur in the background, enhancing the subject
+            I chose an aperture of f/1.78 to create a gentle blur in the
+            background, enhancing the subject
             <br />
-             and maintaining
-            a minimalistic tone. Additionally, I used a shutter speed of 1/121s to
-            capture
+            and maintaining a minimalistic tone. Additionally, I used a shutter
+            speed of 1/121s to capture
             <br />
-             the moment sharply, preventing motion blur and clearly
-            showcasing features such as glasses
+            the moment sharply, preventing motion blur and clearly showcasing
+            features such as glasses
             <br />
-             and clothing.
-             This headshot perfectly reflects an ideal corporate
+            and clothing. This headshot perfectly reflects an ideal corporate
             setting, where attention
             <br />
-             to detail in camera settings was essential in achieving
-            the final result.
+            to detail in camera settings was essential in achieving the final
+            result.
           </div>
         </div>
       </div>
