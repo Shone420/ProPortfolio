@@ -11,10 +11,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-        {/* <Firstpage />
+        <Firstpage />
         <Secondpage />
         <Thirdpage />
-        <Fourthpage /> */}
+        <Fourthpage />
         
        <Projects/>
 
