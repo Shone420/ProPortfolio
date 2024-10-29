@@ -1,0 +1,352 @@
+/* First Page Styling Start */
+.color-for-nav {
+  background: #40534C;
+}
+
+.flex-display-class {
+  display: flex;
+}
+
+.fifty-percent {
+width: 50%;
+}
+
+.bg-style {
+  height: 100vh;
+  background: #40534C;
+}
+
+.details-bg {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  background: 40534C;
+  color:#FFFF;
+  padding: 30px;
+}
+
+.logo-div {
+  width: 50%;
+}
+
+.logo-deets {
+  width: 25px;
+  height: auto;
+}
+
+.about-head {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about-deets {
+  margin-left: 60px;
+  }
+
+
+
+/* Font */
+.reem-kufi-normal {
+  font-family: "Reem Kufi", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  /* Second Page Styling */
+
+
+  /* Main container styling */
+.about-container {
+  background: #D9D9D9;
+  padding: 25px;
+}
+
+/* Header and section titles */
+.about-title {
+  color: black;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+.section-title {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+/* About Me text box styling */
+.about-text-box {
+  background: #40534C;
+  width: 60%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  border-radius: 40px;
+  font-size: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.6;
+}
+
+/* Experience and Education section */
+.info-section {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.info-date {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-weight: 500;
+}
+
+/* Skills section styling */
+.skills-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.skill-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-weight: 620;
+  margin-top: 15px;
+}
+
+}
+
+/* Thirdpage Page Styling Start */
+
+/* Main container styling */
+.thirdpage-container {
+  background: #1A3636;
+  padding: 70px;
+  height: 360vh;
+  color: #ffffff;
+}
+
+/* Project title styling */
+.project-title {
+  font-size: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Section headers */
+.section-header {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 50%;
+}
+
+/* Project description styling */
+.project-description {
+  display: flex;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Main text block styling */
+.description-text {
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 30px;
+  width: 50%;
+  text-align: justify;
+}
+
+.description-text-large {
+  font-size: 17px;
+  padding: 300px;
+}
+
+/* Image styling */
+.project-image {
+  width: 550px;
+  height: auto;
+  position: absolute;
+}
+
+.image1 {
+  left: 10%;
+  top: 268%;
+}
+
+.image2 {
+  right: 10%;
+  top: 355%;
+}
+
+.image3 {
+  left: 10%;
+  top: 470%;
+}
+
+/* Positioning for additional descriptions */
+.description-position1 {
+  position: absolute;
+  top: 267%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.description-position2 {
+  position: absolute;
+  top: 360%;
+  left: 10%;
+}
+
+.description-position3 {
+  position: absolute;
+  top: 512%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.additional-text {
+  position: absolute;
+  top: 275%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+.additional-text-right {
+  position: absolute;
+  top: 368%;
+  left: 10%;
+}
+
+.additional-text-corporate {
+  position: absolute;
+  top: 520%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+}
+
+
+
+/* Fourthpage Page Styling Start */
+
+/* Main container styling */
+.fourthpage-container {
+  background: #40534C;
+  padding: 350px;
+  height: 50vh;
+  position: relative;
+  color: white;
+}
+
+/* Gallery title styling */
+.gallery-title {
+  position: absolute;
+  top: 10%; /* Adjust for preferred vertical positioning */
+  left: 5%;
+  font-size: 55px;
+  color: white;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+/* Image positioning and styling */
+.gallery-image {
+  position: absolute;
+  width: 270px;
+  height: auto;
+}
+
+.image-left {
+  left: 10%;
+  top: 35%;
+}
+
+.image-center {
+  left: 36%;
+  top: 35%;
+  width: 385px; /* Slightly larger for center image */
+}
+
+.image-right {
+  left: 70%;
+  top: 35%;
+}
+
+
+/* FifthPage */
+
+/* Main container styling */
+.contact-container {
+  background: #D9D9D9;
+  padding: 150px;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+
+/* Contact Title */
+.contact-title {
+  color: black;
+  font-size: 50px;
+  font-family: "Reem Kufi", sans-serif;
+  position: absolute;
+  top: 690%;
+  left: 10%;
+  margin-bottom: 35px;
+}
+
+/* Contact info container */
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Icon styling */
+.contact-icon {
+  margin-right: 10px;
+  width: 40px;
+  height: auto;
+}
+
+/* Text styling */
+.contact-text {
+  font-size: 35px;
+  font-weight: 350;
+}
+
+
+
+
+
+
+
+
+
+
