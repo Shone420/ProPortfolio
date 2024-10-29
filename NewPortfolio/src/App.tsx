@@ -1,22 +1,36 @@
 import "./App.css";
 import Firstpage from "./Firstpage";
-import Secondpage from './Secondpage';
+import Secondpage from "./Secondpage";
 import Thirdpage from "./Thirdpage";
 import Fourthpage from "./Fourthpage";
 
-import Projects from './Projects'
+import Projects from "./Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import { Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-        <Firstpage />
-        <Secondpage />
-        <Thirdpage />
-        <Fourthpage />
-        
-       <Projects/>
+      {/* <Firstpage />
+      <Secondpage />
+      <Thirdpage />
+      <Fourthpage /> */}
+
+      {/* <Projects/> */}
+
+      <Routes>
+        <Route
+          path="/ProPortfolio"
+          element={
+            <div>
+              <Firstpage />
+              <Secondpage />
+              <Thirdpage />
+              <Fourthpage />
+            </div>
+          }
+        />
+      </Routes>
 
       <footer
         className="footer"
