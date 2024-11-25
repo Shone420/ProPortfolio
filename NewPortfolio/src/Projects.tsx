@@ -3,16 +3,9 @@ import picture3 from "../public/Picture 3- Aesthetic.jpeg";
 import corporateheadshotpicture1 from "../public/Corporate Headshot Picture 1.png";
 import Homeicon from "../public/Homeicon.png";
 import { Link } from "react-router-dom";
-// import { Link } from "react-router-dom";
-// import { useEffect } from "react";
 
-const Thirdpage = () => {
-  // useEffect(() => {
-  //   const section = document.getElementById("third-hero");
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // }, []);
+
+const Projects = () => {
   return (
     <div style={{ background: "#1A3636", padding: "70px", height: "400vh" }}>
       <div
@@ -27,27 +20,65 @@ const Thirdpage = () => {
         <br />
         <div
           style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "center",
+            position: 'absolute',
+            left: '9%',
             fontSize: "35px",
-            fontWeight: "600",
+            fontWeight: "600"
           }}
         >
           Interactive Media Project- Photography
         </div>
+
         <div
           style={{
             display: "flex",
             color: "#ffffff",
-            fontSize: "20px",
+            fontSize: "25px",
             position: "absolute",
-            top: "50%",
+            top: "48%",
             left: "50%",
           }}
         >
+          
           A Journey of Color: How Life's Experiences Have Shaped Me
         </div>
+
+        <div
+          style={{           
+            position: 'absolute',
+            left: '10%',
+            top: '40%',
+            fontSize: "35px",
+            fontWeight: "600"
+          }}
+        >
+          Passion Shot
+        </div>
+
+        <div
+          style={{           
+            position: 'absolute',
+            left: '63%',
+            top: '140%',
+            fontSize: "35px",
+            fontWeight: "600"
+          }}
+        >
+          Aesthetic Shot
+        </div>
+
+        <div
+          style={{           
+            position: 'absolute',
+            left: '10%',
+            top: '260%',
+            fontSize: "35px",
+            fontWeight: "600"
+          }}
+        >
+          Corporate Headshot
+        </div>
+
         <div
           style={{
             width: "50%",
@@ -58,7 +89,7 @@ const Thirdpage = () => {
             padding: "30px",
           }}
         >
-          <div style={{ position: "absolute", left: "50%", top: "55%" }}>
+          <div style={{ position: "absolute", left: "50%", top: "59%" }}>
             This photograph truly captures how I see life. Jumping in front of
             this bold, colorful mural <br />
             with my arms wide open reflects how I embrace everything life throws
@@ -80,11 +111,11 @@ const Thirdpage = () => {
             Colors, in particular, play a<br /> significant role in my life.
             They evoke memories and emotions, tying together my past and present
             <br />
-            memories Just like this wall with its bright, abstract designs, my
+            memories. Just like this wall with its bright, abstract designs, my
             life is a collection of colorful
             <br />
-            moments—each one representing a different chapter of my journey. The
-            technical side of this <br />
+            moments—each one representing a different chapter of my journey.
+            The technical side of this <br />
             photograph was just as intentional. I used ISO 80 to keep the image
             sharp and clear, allowing
             <br /> the colors to stand out without any grain. The 24mm focal
@@ -106,15 +137,15 @@ const Thirdpage = () => {
           style={{
             display: "flex",
             color: "#ffffff",
-            fontSize: "20px",
-
+            fontSize: "25px",
             position: "absolute",
-            top: "150%",
+            top: "148%",
             left: "10%",
           }}
         >
           Golden Hour Reflections: A Moment of Calm and Clarity
         </div>
+
         <div
           style={{
             width: "50%",
@@ -125,7 +156,7 @@ const Thirdpage = () => {
             padding: "300px",
           }}
         >
-          <div style={{ position: "absolute", left: "10%", top: "155%" }}>
+          <div style={{ position: "absolute", left: "10%", top: "160%" }}>
             This moment was captured during the golden hour, when the sun was
             <br />
             low, casting a warm glow over the scene. The light gently highlights
@@ -176,76 +207,79 @@ const Thirdpage = () => {
             <br />
             and stillness in a single, meaningful moment.
           </div>
-
-          <div>
-            <img
-              src={picture2}
-              alt=""
-              style={{
-                position: "absolute",
-                left: "10%",
-                top: "50%",
-                width: "550px",
-                height: "auto",
-              }}
-            />
-          </div>
-          <div>
-            <img
-              src={picture3}
-              alt=""
-              style={{
-                position: "absolute",
-                right: "10%",
-                top: "150%",
-                width: "550px",
-                height: "auto",
-              }}
-            />
-          </div>
-
-          <div>
-            <img
-              src={corporateheadshotpicture1}
-              alt=""
-              style={{
-                position: "absolute",
-                left: "10%",
-                top: "270%",
-                width: "550px",
-                height: "auto",
-              }}
-            />
-          </div>
-          <div>
-            <Link to="/ProPortfolio">
-              <img
-                src={Homeicon}
-                alt=""
-                style={{
-                  position: "absolute",
-                  left: "94%",
-                  top: "5%",
-                  width: "50px",
-                  height: "auto",
-                }}
-              />
-            </Link>
-          </div>
         </div>
+
+        <div>
+          <img
+            src={picture2}
+            alt=""
+            style={{
+              position: "absolute",
+              left: "10%",
+              top: "50%",
+              width: "550px",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        <div>
+          <img
+            src={picture3}
+            alt=""
+            style={{
+              position: "absolute",
+              right: "10%",
+              top: "150%",
+              width: "550px",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        <div>
+          <img
+            src={corporateheadshotpicture1}
+            alt=""
+            style={{
+              position: "absolute",
+              left: "10%",
+              top: "270%",
+              width: "550px",
+              height: "auto",
+            }}
+          />
+        </div>
+
+        <div>
+          <Link to="/ProPortfolio">
+            <img
+              src={Homeicon}
+              alt=""
+              style={{
+                position: "absolute",
+                left: "94%",
+                top: "5%",
+                width: "50px",
+                height: "auto",
+              }}
+            />
+          </Link>
+        </div>
+
         <div
           style={{
             display: "flex",
             color: "#ffffff",
-            fontSize: "20px",
-
+            fontSize: "25px",
             position: "absolute",
-            top: "280%",
+            top: "278%",
             left: "50%",
           }}
         >
           A Professional Moment Captured
         </div>
+
         <div
           style={{
             width: "50%",
@@ -256,14 +290,14 @@ const Thirdpage = () => {
             padding: "30px",
           }}
         >
-          <div style={{ position: "absolute", left: "50%", top: "285%" }}>
+          <div style={{ position: "absolute", left: "50%", top: "290%" }}>
             This corporate headshot blends simplicity with professionalism,
             capturing me as relaxed yet
             <br />
             confident. The clean, minimalist background keeps the focus on the
             subject, presenting a
             <br />
-            polished appearance.To achieve this image, I selected an ISO of 125,
+            polished appearance. To achieve this image, I selected an ISO of 125,
             ensuring clarity without
             <br />
             introducing noise, which preserves the natural look and fine
@@ -287,10 +321,40 @@ const Thirdpage = () => {
             to detail in camera settings was essential in achieving the final
             result.
           </div>
+          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '123%', left: '10%', borderRadius: '25px'}}>
+          </div>
+          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '253%', right: '10%', borderRadius: '25px'}}></div>
+          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '373%', left: '10%', borderRadius: '25px'}}></div>
+
+          <div style={{display: 'flex', position: "absolute", top: '118%', left: '9%'  }}>
+            <span style={{ margin: '50px'}}>ISO 80 </span>
+            <span style={{ margin: '50px'}}>24 mm </span>
+            <span style={{ margin: '50px'}}>f1.78 </span>
+            <span style={{ margin: '50px'}}>1/1171s </span>
+          </div>
+
+          <div style={{display: 'flex', position: "absolute", top: '248%', right: '9%'}}>
+          <span style={{ margin: '50px' }}>ISO 80</span>
+          <span style={{ margin: '50px' }}>37 mm </span>
+          <span style={{ margin: '50px' }}>f1.78</span>
+          <span style={{ margin: '50px' }}>1/570s</span>
+          </div>
+
+
+          <div style={{display: 'flex', position: "absolute", top: '368%', left: '8%'}}>
+            <span style={{ margin: '50px' }}>ISO 125</span>
+            <span style={{ margin: '50px' }}>32 mm </span>
+            <span style={{ margin: '50px' }}>f1.78</span>
+            <span style={{ margin: '50px' }}>1/121s</span>
+          </div>
+
+           
         </div>
       </div>
     </div>
   );
 };
 
-export default Thirdpage;
+export default Projects;
+
+

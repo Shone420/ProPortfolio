@@ -1,8 +1,8 @@
-
+import qoutes from "../public/quotes.png";
 
 const Secondpage = () => {
   return (
-    <div style={{ background: "#D9D9D9", padding: "25px" }} id="About-section">
+    <div style={{ background: "#D9D9D9", padding: "15px" }} id="About-section">
       <div
         style={{
           color: "black",
@@ -11,6 +11,7 @@ const Secondpage = () => {
           marginBottom: "20px",
         }}
       >
+
         <span className="reem-kufi-normal">About Me</span>
       </div>
       <div style={{ width: "100%", display: "flex" }}>
@@ -85,7 +86,7 @@ const Secondpage = () => {
     <br/>
     <br/>
       <div>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center',fontSize: '30px', fontWeight: '800'}}>Skills</div>
+        <div style={{width: '100%', display: 'flex', justifyContent: 'center',fontSize: '40px', fontWeight: '800'}}>Skills</div>
         <br/>
         <div
           style={{
@@ -95,6 +96,21 @@ const Secondpage = () => {
             fontWeight: "620",
           }}
         >
+          <img src={qoutes} alt="" style={{
+            position: "absolute",
+            left: "16%",
+            top: "113%",
+            width: "65px",
+            height: "auto"}} />
+
+         <img src={qoutes} alt="" style={{
+            position: "absolute",
+            right: "16%",
+            top: "158%",
+            width: "65px",
+            transform: "rotate(180deg)",
+            height: "auto"}} />
+
           <div>Visual Communication</div>
           <div>Color Theory</div>
           <div>Typography</div>

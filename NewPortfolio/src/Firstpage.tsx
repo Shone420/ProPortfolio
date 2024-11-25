@@ -52,6 +52,13 @@ const Firstpage = () => {
           <div className="about-deets" onClick={() => GalleryScroll()}>
             Gallery
           </div>
+          <div className="about-deets">
+            <Link to="/Video" style={{ textDecoration: "none", color: "#FFF" }}>
+              <span>
+                Blog
+              </span>
+            </Link>
+          </div>
           <div className="about-deets" onClick={() => ContactScroll()}>
             Contact
           </div>
@@ -67,7 +74,7 @@ const Firstpage = () => {
             top: "30%",
           }}
         >
-          <div style={{ fontSize: "75px", lineHeight: "1" }}>
+          <div style={{ fontSize: "85px", lineHeight: "1" }}>
             <span>SHONE</span>
             <br />
             <span>THOMAS</span>
@@ -111,11 +118,6 @@ const Firstpage = () => {
             height: "auto",
           }}
         >
-          {/* <img
-            src={waves}
-            alt=""
-            style={{ width: "100%", height: "auto", objectFit: "contain" }}
-          /> */}
         </div>
       </div>
     </div>

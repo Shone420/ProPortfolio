@@ -1,6 +1,7 @@
 
-import Mail from "../public/mail.png"
-import telephone from "../public/telephone.png"
+import Maillogo from "../public/Maillogo.png"
+import linkedin from "../public/linkedin.png"
+
 
 const Fourthpage = () => {
   return (
@@ -8,40 +9,21 @@ const Fourthpage = () => {
     <div
         style={{
           color: "Black",
-          fontSize: "50px",
+          fontSize: "60px",
           marginRight: "100px",
           marginBottom: "35px",
           
         }}
       >
-        <span className="reem-kufi-normal" style={{position: 'absolute', right: '77%', top:'328%'}}>Contact Me</span>
-
-
-        <div style={{display: 'flex', alignItems: 'center'}}>
-        <img
-          src={telephone}
-          alt=""
-          style={{
-            marginRight: "10px",
-            width: "40px",
-            height: "auto",
-          }}
-        />
-        <span style={{fontSize: '35px', fontWeight: '350'}}>+353 874831524</span>
-        </div>
-
+        <span className="reem-kufi-normal" style={{position: 'absolute', left: '39%', top:'326%'}}>Get In Touch</span>
 
         <div style={{display: 'flex', alignItems: 'center'}}>
-          <img
-            src={Mail}
-            alt=""
-            style={{
-              marginRight: "10px",
-              width: "40px",
-              height: "auto",
-            }}
-          />
-          <span style={{fontSize: '35px', fontWeight: '350'}}><a href="mailto:shonethomas420@gmail.com">Get in Touch</a></span>
+          
+         
+          <div style={{position: 'absolute', left: '48%', top: '336%'}}><a href="mailto:shonethomas420@gmail.com"><img src={Maillogo} alt="" style={{width:'50px', height:'auto'}} /></a></div>
+          <div style={{position: 'absolute', left: '48%', top: '345%'}}><a href="https://www.linkedin.com/in/shone-thomas/"
+            target="_blank"
+            rel="noopener noreferrer"><img src={linkedin} alt="" style={{width:'50px', height:'auto'}} /></a></div>
         
         </div>
         <div>

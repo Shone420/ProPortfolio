@@ -4,6 +4,8 @@ import Secondpage from "./Secondpage";
 import Thirdpage from "./Thirdpage";
 import Fourthpage from "./Fourthpage";
 
+import Video from "./Video"
+
 import Projects from "./Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
@@ -31,7 +33,10 @@ function App() {
           }
         />
         <Route path="/Projects" element={<Projects/>} />
+        <Route path="/Video" element={<Video/>} />
+
       </Routes>
+      
 
       <footer
         className="footer"
@@ -39,7 +44,7 @@ function App() {
           background: "#D9D9D9",
           padding: "5px",
           justifyItems: "center",
-          height: "5vh",
+          height: "5vh"
         }}
       >
         {" "}
