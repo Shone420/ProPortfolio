@@ -9,7 +9,6 @@ import Video from "./Video"
 import Projects from "./Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
-import Chat from "./Chat"
 
 
 function App() {
