@@ -25,6 +25,17 @@ width: 50%;
   padding: 30px;
 }
 
+/* Navbar hover effect */
+.about-deets {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+.about-deets:hover span {
+   /* Gold color for hover effect */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
 .logo-div {
   width: 50%;
 }
@@ -54,6 +65,7 @@ width: 50%;
   font-weight: 500;
   font-style: normal;
 
+  
   /* Second Page Styling */
 
 
@@ -137,6 +149,23 @@ width: 50%;
 }
 
 /* Thirdpage Page Styling Start */
+
+
+
+@keyframes imageHover {
+  0% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.1) rotate(0deg);
+    filter: brightness(1.2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    filter: brightness(1);
+  }
+}
 
 /* Main container styling */
 .thirdpage-container {

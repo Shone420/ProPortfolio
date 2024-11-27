@@ -9,6 +9,8 @@ import Video from "./Video"
 import Projects from "./Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Route, Routes } from "react-router-dom";
+import Chat from "./Chat"
+
 
 function App() {
   return (
@@ -36,7 +38,9 @@ function App() {
         <Route path="/Video" element={<Video/>} />
 
       </Routes>
-      
+
+      {/* <Chat /> */}
+
 
       <footer
         className="footer"

@@ -39,7 +39,7 @@ const Video = () => {
 
         <div style={{ width: '1285px', height: '570px', backgroundColor: 'black', position: 'absolute', top: '164%', left: '8%', borderRadius: '25px'}}></div>
         <div style={{ width: '1285px', height: '500px', backgroundColor: 'black', position: 'absolute', top: '367%', left: '8%', borderRadius: '25px'}}></div>
-        <div style={{ width: '1285px', height: '500px', backgroundColor: 'black', position: 'absolute', top: '470%', left: '8%', borderRadius: '25px'}}></div>
+        <div style={{ width: '1285px', height: '500px', backgroundColor: 'black', position: 'absolute', top: '475%', left: '8%', borderRadius: '25px'}}></div>
 
 
         <div style={{ display: "flex", position: 'absolute', left: '24%', top: '371%'}}>
@@ -50,7 +50,7 @@ const Video = () => {
         </div>
 
 
-        <div style={{ display: "flex", position: 'absolute', left: '24%', top: '475%'}}>
+        <div style={{ display: "flex", position: 'absolute', left: '24%', top: '480%'}}>
             <video controls width="780">
                 <source src={Acting} type="video/mp4" />
                 Your browser does not support the video tag.

@@ -2,6 +2,7 @@ import mainimage from "../public/mainpic.png";
 import logo from "../public/logo.png";
 
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Firstpage = () => {
   // Gallery Scroll function
@@ -28,6 +29,21 @@ const Firstpage = () => {
     }
   };
 
+  // CSS classes for hover effects
+  const hoverStyle = {
+    transition: "color 0.3s ease, transform 0.3s ease",
+  };
+
+  const hoverEffect = {
+    // color: "#FFD700", // Gold color for hover effect
+    transform: "scale(1.1)", // Slight zoom effect
+  };
+
+  const [hoverIndex, setHoverIndex] = useState(-1);
+
+  const handleMouseEnter = (index: number) => setHoverIndex(index);
+  const handleMouseLeave = () => setHoverIndex(-1);
+
   return (
     // Whole Page
     <div className="bg-style">
@@ -40,28 +56,31 @@ const Firstpage = () => {
           </div>
         </div>
         {/* Text Section */}
-        <div className="about-head">
-          <div className="about-deets" onClick={() => AboutScroll()}>About</div>
-          <div className="about-deets">
-            <Link to="/Projects" style={{ textDecoration: "none", color: "#FFF" }}>
-              <span>
-                Projects
-              </span>
-            </Link>
-          </div>
-          <div className="about-deets" onClick={() => GalleryScroll()}>
-            Gallery
-          </div>
-          <div className="about-deets">
-            <Link to="/Video" style={{ textDecoration: "none", color: "#FFF" }}>
-              <span>
-                Blog
-              </span>
-            </Link>
-          </div>
-          <div className="about-deets" onClick={() => ContactScroll()}>
-            Contact
-          </div>
+        <div className="about-head" > 
+          {[
+            { label: "About", onClick: AboutScroll },
+            { label: "Projects", link: "/Projects" },
+            { label: "Gallery", onClick: GalleryScroll },
+            { label: "Blog", link: "/Video" },
+            { label: "Contact", onClick: ContactScroll },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="about-deets"
+              style={hoverIndex === index ? { ...hoverStyle, ...hoverEffect } : hoverStyle}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={item.onClick || undefined}
+            >
+              {item.link ? (
+                <Link to={item.link} style={{ textDecoration: "none", color: "#FFF" }}>
+                  {item.label}
+                </Link>
+              ) : (
+                <span>{item.label}</span>
+              )}
+            </div>
+          ))}
         </div>
       </div>
       {/* Second Section */}
@@ -117,11 +136,11 @@ const Firstpage = () => {
             width: "100%",
             height: "auto",
           }}
-        >
-        </div>
+        ></div>
       </div>
     </div>
   );
 };
 
 export default Firstpage;
+
