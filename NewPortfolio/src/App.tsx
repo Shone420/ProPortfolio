@@ -3,6 +3,7 @@ import Firstpage from "./Firstpage";
 import Secondpage from "./Secondpage";
 import Thirdpage from "./Thirdpage";
 import Fourthpage from "./Fourthpage";
+import Posts from "./Posts";
 
 import Video from "./Video"
 
@@ -35,6 +36,7 @@ function App() {
         />
         <Route path="/Projects" element={<Projects/>} />
         <Route path="/Video" element={<Video/>} />
+        <Route path="/ProPortfolio/Posts/" element={<Posts />} /> 
 
       </Routes>
 
