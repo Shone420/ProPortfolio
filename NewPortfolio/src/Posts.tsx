@@ -1,56 +1,226 @@
 import { useState } from "react";
-import Toast from "react-bootstrap/Toast";
+import Homeicon from "../public/Homeicon.png";
+import { Link } from "react-router-dom";
+import Food from "../public/Food.png";
+import Jimmy from "../public/Jimmy.png";
+import Coffee from "../public/Coffee.png";
+import Moment from "../public/Moment.png";
+import Tree from "../public/Tree.png";
+import Ulsports from "../public/Ul Sports.png";
 
-const Posts = () => {
-  const [likeCount, setLikeCount] = useState(0);
-  const [dislikeCount, setDislikeCount] = useState(0);
+const Post = ({ post }) => {
+  
+  const [reactions, setReactions] = useState({
+    love: 224,
+    like: 190,
+    laugh: 50,
+    sad: 12,
+    angry: 10,
+  });
+
   const [commentContent, setCommentContent] = useState("");
-  const [visibleComment, setVisibleComment] = useState(false);
+  const [comments, setComments] = useState<string[]>([]);
+
+  const handleReaction = (type) => {
+    setReactions((prev) => ({ ...prev, [type]: prev[type] + 1 }));
+  };
+
+  const handleAddComment = () => {
+    if (commentContent.trim()) {
+      setComments((prev) => [...prev, commentContent.trim()]);
+      setCommentContent("");
+    }
+  };
+
   return (
-    <div>
-      <button
-        onClick={() => {
-          setLikeCount(likeCount + 1);
-        }}
-      >
-        <svg
-          width="20px"
-          height="20px"
-          viewBox="0 0 1024 1024"
-          class="icon"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M933.387 517.868C950.274 477.276 960 431.509 960 382.887c0-165.301-109.993-299.305-245.677-299.305-83.964 0-158.011 51.39-202.323 129.684-44.31-78.295-118.357-129.685-202.321-129.685C173.994 83.581 64 217.586 64 382.887c0 57.701 13.632 111.398 36.851 157.102 56.694 135.957 196.112 269.389 414.1 400.428 149.872-95.245 273.613-208.473 368.923-341.271 14.435-16.802 49.513-81.278 49.513-81.278z"
-            fill="#FF3B30"
-          />
-          <path
-            d="M484 254.385c8.327-14.713 17.706-28.474 28-41.12-57.022-96.69-134.136-129.682-202.321-129.682-9.409 0-18.659 0.786-27.794 2.039C354.075 95.7 444.727 184.995 484 254.385zM714.323 83.583c-9.547 0-18.946 0.75-28.206 2.039C808.697 102.462 904 229.049 904 382.888c0 48.623-9.724 94.386-26.613 134.982 0 0-35.08 64.473-49.515 81.277-89.475 124.668-204.315 231.88-342.002 323.366 9.592 5.971 19.163 11.942 29.079 17.905 149.872-95.244 273.613-208.474 368.923-341.271 14.434-16.805 49.514-81.277 49.514-81.277C950.276 477.274 960 431.511 960 382.888c0-165.302-109.993-299.305-245.677-299.305z"
-            fill=""
-          />
-        </svg>
-      </button>
-      <div>{likeCount}</div>
-
-      <hr />
-      <hr />
-
-      {!visibleComment && (
-        <input
-          type="text"
-          onChange={(e) => {
-            setCommentContent(e.target.value);
+    <div
+      style={{
+        backgroundColor: "#1E201E",
+        color: "#fff",
+        padding: "15px",
+        borderRadius: "10px",
+        maxWidth: "300px",
+        margin: "20px auto",
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
+        transition: "transform 0.3s ease-in-out", 
+      }}
+      className="post-container"
+    >
+      {/* Image Section */}
+      <div style={{ position: "relative" }}>
+        <img
+          src={post.image}
+          alt="Post"
+          style={{
+            height: "300px",
+            width: "100%",
+            borderRadius: "10px",
+            objectFit: "cover",
           }}
         />
-      )}
-      {visibleComment && <div>{commentContent}</div>}
-      {!visibleComment && (
-        <button onClick={() => setVisibleComment(true)}>post comment</button>
-      )}
+        <div
+          style={{
+            position: "absolute",
+            bottom: "10px",
+            left: "10px",
+            backgroundColor: "#00000099",
+            padding: "5px 10px",
+            borderRadius: "5px",
+          }}
+        >
+          <span style={{ fontSize: "14px", color: "#fff" }}>{post.title}</span>
+        </div>
+      </div>
 
-      <hr />
-      <hr />
+      {/* Reaction Buttons Section */}
+      <div style={{ display: "flex", justifyContent: "space-around", margin: "15px 0" }}>
+        {[
+          { type: "love", color: "#FF3B30", label: "❤️" },
+          { type: "like", color: "#007bff", label: "👍" },
+          { type: "laugh", color: "#ffcc00", label: "😂" },
+          { type: "sad", color: "#605DEC", label: "😢" },
+          { type: "angry", color: "#FF5733", label: "😡" },
+        ].map(({ type, color, label }) => (
+          <button
+            key={type}
+            onClick={() => handleReaction(type)}
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
+            <span
+              style={{
+                fontSize: "20px",
+                color,
+                transition: "transform 0.2s ease-in-out",
+              }}
+              onMouseOver={(e) => {
+                (e.target as HTMLSpanElement).style.transform = "scale(1.2)";
+              }}
+              onMouseOut={(e) => {
+                (e.target as HTMLSpanElement).style.transform = "scale(1)";
+              }}
+            >
+              {label}
+            </span>
+            <span style={{ fontSize: "12px", marginTop: "5px", color: "#fff" }}>
+              {reactions[type]}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      <hr style={{ borderColor: "#fff" }} />
+
+      {/* Comment Section */}
+      <input
+        type="text"
+        placeholder="Write a comment..."
+        value={commentContent}
+        onChange={(e) => setCommentContent(e.target.value)}
+        style={{
+          width: "100%",
+          padding: "8px",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+          marginBottom: "10px",
+        }}
+      />
+      <button
+        onClick={handleAddComment}
+        style={{
+          backgroundColor: "#FF3B30",
+          color: "#fff",
+          padding: "8px 12px",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          marginBottom: "10px",
+        }}
+      >
+        Post Comment
+      </button>
+      <div style={{ marginTop: "10px" }}>
+        {comments.map((comment, index) => (
+          <div
+            key={index}
+            style={{
+              padding: "8px",
+              backgroundColor: "#ffffff22",
+              borderRadius: "5px",
+              marginBottom: "5px",
+            }}
+          >
+            {comment}
+          </div>
+        ))}
+      </div>
+
+      <hr style={{ borderColor: "#fff" }} />
+    </div>
+  );
+};
+
+const Posts = () => {
+  const posts = [
+    { id: 1, title: "Pizzaa!!", image: Food },
+    { id: 2, title: "Hot Chocalate", image: Coffee },
+    { id: 3, title: "My Lazy Cat", image: Jimmy },
+    { id: 4, title: "Surreal", image: Moment },
+    { id: 5, title: "Evening Greens", image: Ulsports },
+    { id: 6, title: "Veins of Nature", image: Tree },
+  ];
+
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "center",
+        alignItems: "center",
+        gap: "10px",
+        backgroundColor: "#2B3A35",
+        padding: "20px",
+        width: "100%",
+        minHeight: "100vh",
+        overflow: "hidden",
+        boxSizing: "border-box",
+      }}
+    >
+      {posts.map((post) => (
+        <div
+          key={post.id}
+          style={{
+            flex: "0 0 auto",
+            width: "400px", 
+          }}
+          className="post-container"
+        >
+          <Post post={post} />
+        </div>
+      ))}
+
+      {/* Top Icon Section */}
+      <div>
+        <Link to="/ProPortfolio">
+          <img
+            src={Homeicon}
+            alt="Home"
+            style={{
+              position: "absolute",
+              left: "92%",
+              top: "6%",
+              width: "50px",
+              height: "auto",
+            }}
+          />
+        </Link>
+      </div>
     </div>
   );
 };

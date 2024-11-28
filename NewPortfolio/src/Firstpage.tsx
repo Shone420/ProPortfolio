@@ -61,7 +61,7 @@ const Firstpage = () => {
             { label: "About", onClick: AboutScroll },
             { label: "Projects", link: "/Projects" },
             { label: "Gallery", onClick: GalleryScroll },
-            { label: "Blog", link: "/Video" },
+            { label: "Video Blog", link: "/Video" },
             { label: "Posts", link: "/ProPortfolio/Posts" },
             { label: "Contact", onClick: ContactScroll },
           ].map((item, index) => (

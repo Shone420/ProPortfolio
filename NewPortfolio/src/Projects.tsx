@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div style={{ background: "#1A3636", padding: "70px", height: "400vh" }}>
+    <div style={{ background: "#1A3636", padding: "70px", height: "400vh", }}>
       <div
         style={{
           color: "white",
