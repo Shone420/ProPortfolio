@@ -8,8 +8,16 @@ import Moment from "../public/Moment.png";
 import Tree from "../public/Tree.png";
 import Ulsports from "../public/Ul Sports.png";
 
-const Post = ({ post }) => {
-  
+
+interface PostProps {
+  post: {
+    id: number;
+    title: string;
+    image: string; 
+  };
+}
+
+const Post = ({ post }: PostProps) => {
   const [reactions, setReactions] = useState({
     love: 224,
     like: 190,
@@ -18,10 +26,10 @@ const Post = ({ post }) => {
     angry: 10,
   });
 
-  const [commentContent, setCommentContent] = useState("");
+  const [commentContent, setCommentContent] = useState<string>("");
   const [comments, setComments] = useState<string[]>([]);
 
-  const handleReaction = (type) => {
+  const handleReaction = (type: keyof typeof reactions) => {
     setReactions((prev) => ({ ...prev, [type]: prev[type] + 1 }));
   };
 
@@ -42,7 +50,7 @@ const Post = ({ post }) => {
         maxWidth: "300px",
         margin: "20px auto",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.3)",
-        transition: "transform 0.3s ease-in-out", 
+        transition: "transform 0.3s ease-in-out",
       }}
       className="post-container"
     >
@@ -197,7 +205,7 @@ const Posts = () => {
           key={post.id}
           style={{
             flex: "0 0 auto",
-            width: "400px", 
+            width: "400px",
           }}
           className="post-container"
         >
