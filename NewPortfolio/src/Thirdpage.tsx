@@ -7,144 +7,162 @@ import paper from "../public/paper.png";
 const Thirdpage = () => {
   return (
     <div
-      style={{ background: "#40534C", padding: "350px", height: "50vh" }}
-      id="Gallery-section"
+  style={{
+    background: "#40534C",
+    padding: "60px 5%",
+    minHeight: "100vh",
+  }}
+  id="Gallery-section"
+>
+  {/* Title Section */}
+  <div style={{ textAlign: "left", marginBottom: "20px" }}>
+    <h2
+      className="reem-kufi-normal"
+      style={{ fontSize: "55px", color: "white", margin: "0" }}
     >
-      <div>
-        <div
-          style={{
-            width: "1340px",
-            height: "460px",
-            backgroundColor: "black",
-            position: "absolute",
-            top: "250%",
-            left: "5%",
-            borderRadius: "25px",
-          }}
-        ></div>
+      Gallery
+    </h2>
+  </div>
 
-        <div
-          style={{
-            width: "350px",
-            height: "440px",
-            backgroundColor: "#697565",
-            position: "absolute",
-            top: "243%",
-            left: "7.5%",
-            borderRadius: "25px",
-          }}
-        ></div>
+  {/* Content Section */}
 
-        <div
-          style={{
-            width: "450px",
-            height: "440px",
-            backgroundColor: "#697565",
-            position: "absolute",
-            top: "243%",
-            left: "34%",
-            borderRadius: "25px",
-          }}
-        ></div>
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+      gap: "20px",
+      marginBottom: "2%", marginLeft:"%"
+    }}
+  >
+    <img
+        src={paper}
+        alt=""
+        style={{
+          width: "85px",
+          height: "100px",
+          transform: "rotate(-5deg)", marginLeft: "10%"
+        }}
+      />
+      <img
+        src={paper}
+        alt=""
+        style={{
+          width: "85px",
+          height: "100px",
+          transform: "rotate(-5deg)",
+        }}
+      />
+      <img
+        src={paper}
+        alt=""
+        style={{
+          width: "85px",
+          height: "100px",
+          transform: "rotate(-5deg)", marginLeft: "10%"
+        }}
+      />
 
-        <div
-          style={{
-            width: "350px",
-            height: "440px",
-            backgroundColor: "#697565",
-            position: "absolute",
-            top: "243%",
-            left: "67.5%",
-            borderRadius: "25px",
-          }}
-        ></div>
 
-        <span
-          className="reem-kufi-normal"
-          style={{
-            position: "absolute",
-            top: "226%",
-            left: "5%",
-            fontSize: "55px",
-            color: "white",
-          }}
-        >
-          Gallery
-        </span>
-        <img
-          src={corporateheadshotpicture1}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "10%",
-            top: "248%",
-            width: "270px",
-            height: "auto",
-            animation: "imageHover 3s infinite",
-          }}
-        />
-        <img
-          src={picture3}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "70%",
-            top: "248%",
-            width: "270px",
-            height: "auto",
-            animation: "imageHover 3s infinite",
-          }}
-        />
-        <img
-          src={picture2}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "36%",
-            top: "248%",
-            width: "385px",
-            height: "auto",
-            animation: "imageHover 3s infinite",
-          }}
-        />
-        <img
-          src={paper}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "10%",
-            top: "238%",
-            width: "85px",
-            height: "100px",
-            transform: "rotate(-5deg)",
-          }}
-        />
-        <img
-          src={paper}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "36%",
-            top: "238%",
-            width: "85px",
-            height: "100px",
-            transform: "rotate(-5deg)",
-          }}
-        />
-        <img
-          src={paper}
-          alt=""
-          style={{
-            position: "absolute",
-            left: "70%",
-            top: "238%",
-            width: "85px",
-            height: "100px",
-            transform: "rotate(-5deg)",
-          }}
-        />
-      </div>
+  </div>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
+      gap: "20px",
+      backgroundColor: "black",
+      borderRadius: "25px",
+      padding: "20px", height: "450px"
+    }}></div>
+
+
+  <div
+    style={{
+      display: "flex",
+      marginTop: "-40%",
+      
+      padding: "20px",
+    }}
+  >
+
+    
+    {/* First Column */}
+    <div style={{ marginRight: "3%", marginLeft: "1%"}}><div
+      style={{
+        backgroundColor: "#697565",
+        borderRadius: "25px",
+        padding: "50px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img
+        src={corporateheadshotpicture1}
+        alt=""
+        style={{
+          width: "270px",
+          height: "auto",
+          marginBottom: "15px",
+          animation: "imageHover 3s infinite",
+        }}
+      />
+      
+    </div></div>
+
+    {/* Second Column */}
+    <div
+      style={{
+        backgroundColor: "#697565",
+        borderRadius: "25px",
+        padding: "50px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img
+        src={picture2}
+        alt=""
+        style={{
+          width: "385px",
+          height: "auto",
+          marginBottom: "15px",
+          animation: "imageHover 3s infinite",
+        }}
+      />
+      
     </div>
+
+    {/* Third Column */}
+    <div style={{marginLeft:"3%"}}><div
+      style={{
+        backgroundColor: "#697565",
+        borderRadius: "25px",
+        padding: "50px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <img
+        src={picture3}
+        alt=""
+        style={{
+          width: "270px",
+          height: "auto",
+          marginBottom: "15px",
+          animation: "imageHover 3s infinite",
+        }}
+      />
+      
+    </div></div>
+  </div>
+</div>
+
   );
 };
 

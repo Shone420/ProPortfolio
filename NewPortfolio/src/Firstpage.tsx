@@ -94,7 +94,7 @@ const Firstpage = () => {
             top: "30%",
           }}
         >
-          <div style={{ fontSize: "85px", lineHeight: "1" }}>
+          <div style={{ fontSize: "90px", lineHeight: "1" }}>
             <span>SHONE</span>
             <br />
             <span>THOMAS</span>
@@ -111,7 +111,7 @@ const Firstpage = () => {
           <img
             src={mainimage}
             alt=""
-            style={{ width: "50%", height: "auto" }}
+            style={{width: "50%", height: "auto"}}
           />
         </div>
         <div
@@ -122,7 +122,7 @@ const Firstpage = () => {
             top: "42%",
           }}
         >
-          <div style={{ fontSize: "75px", lineHeight: "1" }}>
+          <div style={{ fontSize: "85px", lineHeight: "1" }}>
             <span>GRAPHIC</span>
             <br />
             <span>DESIGNER</span>

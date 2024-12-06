@@ -47,6 +47,7 @@ function App() {
         className="footer"
         style={{
           background: "#D9D9D9",
+          color: "black",
           padding: "5px",
           justifyItems: "center",
           height: "5vh"

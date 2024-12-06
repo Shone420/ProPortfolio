@@ -5,7 +5,7 @@ const Secondpage = () => {
     <div style={{ background: "#D9D9D9", padding: "15px" }} id="About-section">
       <div
         style={{
-          color: "black",
+          color: "#2A3335",
           fontSize: "50px",
           marginLeft: "20px",
           marginBottom: "20px",
@@ -27,7 +27,7 @@ const Secondpage = () => {
             color: "#FFFFFF",
             borderRadius: "40px",
             fontSize: "25px",
-            padding: "30px",
+            padding: "30px"
           }}
         >
           As a designer with nearly two years of experience, I have an
@@ -53,40 +53,40 @@ const Secondpage = () => {
       <br />
       <br />
     
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontSize: '35px', fontWeight: '800'}}>Experience</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontSize: '35px', fontWeight: '800'}}>Education</div>
     </div>
 
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontWeight: '600'}}>Interior Designer</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontWeight: '600'}}>Masters in Interaction and Experience Design</div>
     </div>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>(2022-2023)</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>(2024-Present)</div>
     </div>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>WeWork, Bangalore, India</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>University Of Limerick</div>
     </div>
     <br/>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontWeight: '600'}}>Graphic Designer</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center', fontWeight: '600'}}>Bsc In Interior Design and Decoration</div>
     </div>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>(2021-2022)</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>(2018-2021)</div>
     </div>
-    <div style={{display: 'flex'}}>
+    <div style={{display: 'flex', color: "black"}}>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>ThinkSmart, Bahrain</div>
         <div style={{width: '50%', display: 'flex', justifyContent: 'center'}}>Jd School Of Design</div>
     </div>
     <br/>
     <br/>
       <div>
-        <div style={{width: '100%', display: 'flex', justifyContent: 'center',fontSize: '40px', fontWeight: '800'}}>Skills</div>
+        <div style={{width: '100%', display: 'flex', justifyContent: 'center',fontSize: '40px', fontWeight: '800', color: "black"}}>Skills</div>
         <br/>
         <div
           style={{
@@ -94,6 +94,7 @@ const Secondpage = () => {
             width: "100%",
             justifyContent: "space-between",
             fontWeight: "620",
+            color: "black"
           }}
         >
           <img src={qoutes} alt="" style={{

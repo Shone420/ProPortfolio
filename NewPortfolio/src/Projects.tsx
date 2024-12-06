@@ -7,354 +7,214 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div style={{ background: "#1A3636", padding: "70px", height: "400vh", }}>
-      <div
-        style={{
-          color: "white",
-          fontSize: "50px",
-          marginLeft: "20px",
-          marginBottom: "20px",
-        }}
+    <div
+      style={{
+        background: "#1A3636",
+        
+        minHeight: "100vh",
+      }}
+    >
+      {/* Header Section */}
+      <header
+        style={{ textAlign: "left", color: "white", marginBottom: "50px", paddingLeft: "100px", paddingTop: "70px", display: "flex" }}
       >
-        <span className="reem-kufi-normal">Projects</span>
-        <br />
-        <div
-          style={{
-            position: 'absolute',
-            left: '9%',
-            fontSize: "35px",
-            fontWeight: "600"
-          }}
-        >
-          Interactive Media Project- Photography
-        </div>
+        <div><h1 className="reem-kufi-normal" style={{ fontSize: "50px" }}>
+          Projects
+        </h1>
+        <h2 style={{ fontSize: "35px", fontWeight: "600", marginLeft: "5%" }}>
+          Interactive Media Project - Photography
+        </h2></div>
 
-        <div
-          style={{
-            display: "flex",
-            color: "#ffffff",
-            fontSize: "25px",
-            position: "absolute",
-            top: "48%",
-            left: "50%",
-          }}
-        >
+      {/* Home Icon */}
+      <div style={{marginLeft: "600px", marginTop: "5px"}}>
+        <Link to="/ProPortfolio">
+          <img
+            src={Homeicon}
+            alt="Home"
+            style={{ width: "50px", height: "auto", cursor: "pointer" }}
+          />
+        </Link>
+      </div>
+      </header>
+
+      {/* Grid for the Project Content */}
+      <div style={{color:"white", display: "grid", gridTemplateRows: "1fr 1fr 1fr", paddingLeft: "150px", paddingRight: "150px", paddingBottom: "120px"}}>
+        {/* Passion Shot Section */}
+        
+          <div style={{display:"flex"}}>
+            <div><h3 style={{ fontSize: "35px", fontWeight: "600" }}>Passion Shot</h3>
+              <img
+                src={picture2}
+                alt="Passion Shot"
+                style={{ width: "100%", borderRadius: "10px", marginTop: "23px" }}
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  marginTop: "20px",
+                  backgroundColor: "black",
+                  borderRadius: "20px",
+                  padding: "10px",
+                  width:"500px"
+                }}
+              >
+                <span>ISO 80</span>
+                <span>24 mm</span>
+                <span>f1.78</span>
+                <span>1/1171s</span>
+              </div>
+            
+            
+            </div>
+              
+            <div>
+              <h3 style={{marginTop: "50px", marginLeft: "60px"}}>A Journey of Color: How Life's Experiences Have Shaped Me</h3>
+              <p  style={{ marginTop: "35px",marginLeft: "60px", fontSize: "16px", textAlign: "justify" }}>
+              This photograph truly captures how I see life. Jumping in front of this bold, colorful mural
+              with my arms wide open reflects how I embrace everything life throws my way. The vibrant
+              colors of the mural symbolize the emotions and phases that have shaped my journey. Each
+              color tells a story, whether it's the joy of good times or the lessons learned during moments
+              of struggle and reflection. As I've grown, I've moved to different places, and each new
+              environment has helped shape who I am today, much like the bold, vibrant colors on the wall.
+              Every time I step into a new space or culture, my mindset shifts, and I'm able to see life from a
+              fresh perspective. As an only child, I've had plenty of time to explore who I am on my own
+              terms, navigating life's path in a way that's deeply personal. Colors, in particular, play a
+              significant role in my life. They evoke memories and emotions, tying together my past and present
+              memories. Just like this wall with its bright, abstract designs, my life is a collection of colorful
+              moments each one representing a different chapter of my journey. The technical side of this
+              photograph was just as intentional. I used ISO 80 to keep the image sharp and clear, allowing
+              the colors to stand out without any grain. The 24mm focal length was perfect for capturing
+              the wide scene, ensuring both the mural and I are in focus. An aperture of f/1.78 provided just
+              enough background blur to make the colors pop, while the fast shutter speed of 1/1171s froze
+              the action of my jump, capturing the energy and freedom of the moment. Ultimately, this
+              image represents more than just a snapshot, it's a reflection of my life's journey, full of color,
+              movement, and self-discovery.</p>
+            </div>
+          </div>
           
-          A Journey of Color: How Life's Experiences Have Shaped Me
-        </div>
+        
 
-        <div
-          style={{           
-            position: 'absolute',
-            left: '10%',
-            top: '40%',
-            fontSize: "35px",
-            fontWeight: "600"
-          }}
-        >
-          Passion Shot
-        </div>
+        {/* Aesthetic Shot Section */}
+        <div style={{display: "flex", marginTop: "-3%"}}>
+          
 
-        <div
-          style={{           
-            position: 'absolute',
-            left: '63%',
-            top: '140%',
-            fontSize: "35px",
-            fontWeight: "600"
-          }}
-        >
-          Aesthetic Shot
-        </div>
 
-        <div
-          style={{           
-            position: 'absolute',
-            left: '10%',
-            top: '260%',
-            fontSize: "35px",
-            fontWeight: "600"
-          }}
-        >
-          Corporate Headshot
-        </div>
+          <div>
+            <h3 style={{marginTop: "50px"}}>Golden Hour Reflections: A Moment of Calm and Clarity</h3>
 
-        <div
-          style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "right",
-            color: "#FFFFFF",
-            fontSize: "16px",
-            padding: "30px",
-          }}
-        >
-          <div style={{ position: "absolute", left: "50%", top: "59%" }}>
-            This photograph truly captures how I see life. Jumping in front of
-            this bold, colorful mural <br />
-            with my arms wide open reflects how I embrace everything life throws
-            my way. The vibrant <br />
-            colors of the mural symbolize the emotions and phases that have
-            shaped my journey. Each <br />
-            color tells a story—whether it's the joy of good times or the
-            lessons learned during moments
-            <br /> of struggle and reflection. As I've grown, I've moved to
-            different places, and each new <br />
-            environment has helped shape who I am today, much like the bold,
-            vibrant colors on the wall.
-            <br />
-            Every time I step into a new space or culture, my mindset shifts,
-            and I'm able to see life from a <br />
-            fresh perspective. As an only child, I've had plenty of time to
-            explore who I am on my own <br />
-            terms, navigating life's path in a way that's deeply personal.
-            Colors, in particular, play a<br /> significant role in my life.
-            They evoke memories and emotions, tying together my past and present
-            <br />
-            memories. Just like this wall with its bright, abstract designs, my
-            life is a collection of colorful
-            <br />
-            moments—each one representing a different chapter of my journey.
-            The technical side of this <br />
-            photograph was just as intentional. I used ISO 80 to keep the image
-            sharp and clear, allowing
-            <br /> the colors to stand out without any grain. The 24mm focal
-            length was perfect for capturing <br />
-            the wide scene, ensuring both the mural and I are in focus. An
-            aperture of f/1.78 provided just
-            <br />
-            enough background blur to make the colors pop, while the fast
-            shutter speed of 1/1171s froze <br />
-            the action of my jump, capturing the energy and freedom of the
-            moment. Ultimately, this <br />
-            image represents more than just a snapshot—it's a reflection of my
-            life's journey, full of color, <br />
-            movement, and self-discovery.
-          </div>
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            color: "#ffffff",
-            fontSize: "25px",
-            position: "absolute",
-            top: "148%",
-            left: "10%",
-          }}
-        >
-          Golden Hour Reflections: A Moment of Calm and Clarity
-        </div>
-
-        <div
-          style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "right",
-            color: "#ffffff",
-            fontSize: "17px",
-            padding: "300px",
-          }}
-        >
-          <div style={{ position: "absolute", left: "10%", top: "160%" }}>
+            <p style={{ marginTop: "35px", marginRight: "20px", fontSize: "16px", lineHeight: "1.8", textAlign: "justify" }}>
             This moment was captured during the golden hour, when the sun was
-            <br />
             low, casting a warm glow over the scene. The light gently highlights
-            <br />
-            my face, creating a sense of inner reflection. The cool tones of my
-            jacket
-            <br />
-            contrast beautifully with the warmth of the sunlight, symbolizing
-            the
-            <br />
+            my face, creating a sense of inner reflection. The cool tones of my jacket
+            contrast beautifully with the warmth of the sunlight, symbolizing the
             balance I seek in life between moments of calm and the energy that
-            <br />
-            drives me forward.
-            <br />
-            To capture this feeling, I carefully chose my camera settings. I set
-            the ISO
-            <br />
-            to 80 to maintain sharpness, ensuring the details stayed crisp and
-            free of
-            <br />
+            drives me forward. <br />
+            To capture this feeling, I carefully chose my camera settings. I set the ISO
+            to 80 to maintain sharpness, ensuring the details stayed crisp and free of
             noise. The 37mm focal length allowed me to focus on myself while
-            <br />
-            keeping the background present yet subtle. With the aperture at
-            f/1.78, I
-            <br />
-            created a soft blur in the background, drawing attention to my
-            expression,
-            <br />
-            the jacket, and the warmth of the sunlight, without losing the
-            overall
-            <br />
-            atmosphere of the setting behind me.
-            <br />
-            The shutter speed of 1/570s was key in freezing this fleeting
-            moment,
-            <br />
-            perfectly capturing the golden light as it bathed the scene. This
-            fast
-            <br />
+            keeping the background present yet subtle. With the aperture at f/1.78, I
+            created a soft blur in the background, drawing attention to my expression,
+            the jacket, and the warmth of the sunlight, without losing the overall
+            atmosphere of the setting behind me. <br />
+            The shutter speed of 1/570s was key in freezing this fleeting moment,
+            perfectly capturing the golden light as it bathed the scene. This fast
             shutter speed ensured the image remained sharp as the light slowly
-            <br />
-            faded.
-            <br />
-            In the end, this photo reflects both the peacefulness and clarity I
-            find in
-            <br />
+            faded. <br />
+            In the end, this photo reflects both the peacefulness and clarity I find in
             the world around me—capturing the harmony between light, shadow,
-            <br />
-            and stillness in a single, meaningful moment.
+            and stillness in a single, meaningful moment.</p>
           </div>
-        </div>
+          <div>
+              <h3 style={{ fontSize: "35px", fontWeight: "600", textAlign: "right" }}>
+                Aesthetic Shot
+              </h3>
+              <img
+                src={picture3}
+                alt="Aesthetic Shot"
+                style={{ width: "80%", borderRadius: "10px", marginLeft: "20%" }}
+              />
 
-        <div>
-          <img
-            src={picture2}
-            alt=""
-            style={{
-              position: "absolute",
-              left: "10%",
-              top: "50%",
-              width: "550px",
-              height: "auto",
-            }}
-          />
-        </div>
-
-        <div>
-          <img
-            src={picture3}
-            alt=""
-            style={{
-              position: "absolute",
-              right: "10%",
-              top: "150%",
-              width: "550px",
-              height: "auto",
-            }}
-          />
-        </div>
-
-        <div>
-          <img
-            src={corporateheadshotpicture1}
-            alt=""
-            style={{
-              position: "absolute",
-              left: "10%",
-              top: "270%",
-              width: "550px",
-              height: "auto",
-            }}
-          />
-        </div>
-
-        <div>
-          <Link to="/ProPortfolio">
-            <img
-              src={Homeicon}
-              alt=""
-              style={{
-                position: "absolute",
-                left: "94%",
-                top: "5%",
-                width: "50px",
-                height: "auto",
-              }}
-            />
-          </Link>
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            color: "#ffffff",
-            fontSize: "25px",
-            position: "absolute",
-            top: "278%",
-            left: "50%",
-          }}
-        >
-          A Professional Moment Captured
-        </div>
-
-        <div
-          style={{
-            width: "50%",
-            display: "flex",
-            justifyContent: "right",
-            color: "#FFFFFF",
-            fontSize: "16px",
-            padding: "30px",
-          }}
-        >
-          <div style={{ position: "absolute", left: "50%", top: "290%" }}>
-            This corporate headshot blends simplicity with professionalism,
-            capturing me as relaxed yet
-            <br />
-            confident. The clean, minimalist background keeps the focus on the
-            subject, presenting a
-            <br />
-            polished appearance. To achieve this image, I selected an ISO of 125,
-            ensuring clarity without
-            <br />
-            introducing noise, which preserves the natural look and fine
-            details. The 32mm focal length
-            <br />
-            was ideal for this shot, providing detail while avoiding distortion,
-            crucial for a headshot.
-            <br />
-            I chose an aperture of f/1.78 to create a gentle blur in the
-            background, enhancing the subject
-            <br />
-            and maintaining a minimalistic tone. Additionally, I used a shutter
-            speed of 1/121s to capture
-            <br />
-            the moment sharply, preventing motion blur and clearly showcasing
-            features such as glasses
-            <br />
-            and clothing. This headshot perfectly reflects an ideal corporate
-            setting, where attention
-            <br />
-            to detail in camera settings was essential in achieving the final
-            result.
-          </div>
-          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '123%', left: '10%', borderRadius: '25px'}}>
-          </div>
-          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '253%', right: '10%', borderRadius: '25px'}}></div>
-          <div style={{ width: '550px', height: '55px', backgroundColor: 'black', position: 'absolute', top: '373%', left: '10%', borderRadius: '25px'}}></div>
-
-          <div style={{display: 'flex', position: "absolute", top: '118%', left: '9%'  }}>
-            <span style={{ margin: '50px'}}>ISO 80 </span>
-            <span style={{ margin: '50px'}}>24 mm </span>
-            <span style={{ margin: '50px'}}>f1.78 </span>
-            <span style={{ margin: '50px'}}>1/1171s </span>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  marginTop: "20px",
+                  backgroundColor: "black",
+                  borderRadius: "20px",
+                  padding: "10px",
+                  width: "470px",
+                  marginLeft: "20%"
+                }}
+              >
+                <span>ISO 80</span>
+                <span>37 mm</span>
+                <span>f1.78</span>
+                <span>1/570s</span>
+              </div>
           </div>
 
-          <div style={{display: 'flex', position: "absolute", top: '248%', right: '9%'}}>
-          <span style={{ margin: '50px' }}>ISO 80</span>
-          <span style={{ margin: '50px' }}>37 mm </span>
-          <span style={{ margin: '50px' }}>f1.78</span>
-          <span style={{ margin: '50px' }}>1/570s</span>
-          </div>
+          
+        </div>
 
+        {/* Corporate Headshot Section */}
+        <div style={{ display:"flex", marginTop: "2%"  }}>
+          <div>
+            <h3 style={{ fontSize: "35px", fontWeight: "600" }}>
+              Corporate Headshot
+            </h3>
+            
+              <img
+                src={corporateheadshotpicture1}
+                alt="Corporate Headshot"
+                style={{ width: "100%", borderRadius: "10px", marginTop: "5%" }}
+              />
 
-          <div style={{display: 'flex', position: "absolute", top: '368%', left: '8%'}}>
-            <span style={{ margin: '50px' }}>ISO 125</span>
-            <span style={{ margin: '50px' }}>32 mm </span>
-            <span style={{ margin: '50px' }}>f1.78</span>
-            <span style={{ margin: '50px' }}>1/121s</span>
-          </div>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-evenly",
+                    marginTop: "20px",
+                    backgroundColor: "black",
+                    borderRadius: "20px",
+                    padding: "10px",
+                    width: "500px",
+                   
+                  }}
+                >
+                  <span>ISO 125</span>
+                  <span>32 mm</span>
+                  <span>f1.78</span>
+                  <span>1/121s</span>
+                </div>
+              </div>
+            <div >
 
-           
+             <h3 style={{marginTop: "200px", marginLeft: "20%"}}>A Professional Moment Captured</h3>
+              <p style={{ marginTop: "35px",marginLeft: "20%", fontSize: "16px", lineHeight: "1.8", textAlign: "justify" }}>This corporate headshot blends simplicity with professionalism,
+              capturing me as relaxed yet confident. The clean, minimalist
+              background keeps the focus on the subject, presenting a polished
+              appearance.To achieve this image, I selected an ISO of 125,
+              ensuring clarity without introducing noise, which preserves the
+              natural look and fine details. The 32mm focal length was ideal for
+              this shot, providing detail while avoiding distortion, crucial for
+              a headshot. I chose an aperture of f/1.78 to create a gentle blur
+              in the background, enhancing the subject and maintaining a
+              minimalistic tone. Additionally, I used a shutter speed of 1/121s
+              to capture the moment sharply, preventing motion blur and clearly
+              showcasing features such as glasses and clothing. This headshot
+              perfectly reflects an ideal corporate setting, where attention to
+              detail in camera settings was essential in achieving the final
+              result.</p>
+              
+            </div>
+          
         </div>
       </div>
+
+      
     </div>
   );
 };
 
 export default Projects;
-
-

@@ -8,16 +8,16 @@ import Moment from "../public/Moment.png";
 import Tree from "../public/Tree.png";
 import Ulsports from "../public/Ul Sports.png";
 
-
 interface PostProps {
   post: {
     id: number;
     title: string;
-    image: string; 
+    image: string;
   };
 }
 
 const Post = ({ post }: PostProps) => {
+  // Define the reactions state with specific types
   const [reactions, setReactions] = useState({
     love: 224,
     like: 190,
@@ -29,7 +29,8 @@ const Post = ({ post }: PostProps) => {
   const [commentContent, setCommentContent] = useState<string>("");
   const [comments, setComments] = useState<string[]>([]);
 
-  const handleReaction = (type: keyof typeof reactions) => {
+  // Correct the handleReaction function by using a more specific key type for `type`
+  const handleReaction = (type: "love" | "like" | "laugh" | "sad" | "angry") => {
     setReactions((prev) => ({ ...prev, [type]: prev[type] + 1 }));
   };
 
@@ -91,7 +92,7 @@ const Post = ({ post }: PostProps) => {
         ].map(({ type, color, label }) => (
           <button
             key={type}
-            onClick={() => handleReaction(type)}
+            onClick={() => handleReaction(type as "love" | "like" | "laugh" | "sad" | "angry")}
             style={{
               background: "none",
               border: "none",
@@ -117,7 +118,7 @@ const Post = ({ post }: PostProps) => {
               {label}
             </span>
             <span style={{ fontSize: "12px", marginTop: "5px", color: "#fff" }}>
-              {reactions[type]}
+              {reactions[type as keyof typeof reactions]} 
             </span>
           </button>
         ))}
@@ -221,7 +222,7 @@ const Posts = () => {
             alt="Home"
             style={{
               position: "absolute",
-              left: "92%",
+              left: "91%",
               top: "6%",
               width: "50px",
               height: "auto",

@@ -65,6 +65,77 @@ width: 50%;
   font-weight: 500;
   font-style: normal;
 
+  /* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust layout for tablets */
+  .details-bg {
+    flex-direction: column; /* Stacks logo and navbar */
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .about-head {
+    justify-content: flex-start; /* Aligns navbar to the left */
+    margin-top: 10px;
+  }
+
+  .logo-deets {
+    width: 30px;
+  }
+
+  .flex-display-class img {
+    width: 60%; /* Shrinks image for smaller screens */
+    left: 20%; /* Centers image */
+  }
+
+  .main-title {
+    font-size: 8vw; /* Larger font for better visibility */
+    top: 15%;
+  }
+
+  .subtitle {
+    font-size: 6vw;
+    top: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust layout for phones */
+  .details-bg {
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .about-deets {
+    margin-left: 10px;
+    font-size: 12px; /* Reduces font size */
+  }
+
+  .logo-deets {
+    width: 20px;
+  }
+
+  .flex-display-class img {
+    width: 70%; /* Further shrinks image */
+    left: 15%; /* Centers image */
+  }
+
+  .main-title {
+    font-size: 10vw; /* Scales for very small screens */
+    top: 10%;
+  }
+
+  .subtitle {
+    font-size: 8vw;
+    top: 30%;
+  }
+}
+
+ 
+
+
+  
+
   
   /* Second Page Styling */
 
