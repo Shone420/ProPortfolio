@@ -3,7 +3,9 @@ import picture3 from "../public/Picture 3- Aesthetic.jpeg";
 import corporateheadshotpicture1 from "../public/Corporate Headshot Picture 1.png";
 import Homeicon from "../public/Homeicon.png";
 import { Link } from "react-router-dom";
-
+import Isle from "../public/Isle.png"
+import Audaciy from "../public/Audacity.png"
+import Dice from "../public/Dice.jpg"
 
 const Projects = () => {
   return (
@@ -209,6 +211,35 @@ const Projects = () => {
               
             </div>
           
+        </div>
+        <div className="reem-kufi-normal" style={{ fontSize: "50px", marginTop: "6%" }}> Exploring Algorithms</div>
+        <div style={{marginTop: "2%"}}>
+          <div style={{display: "flex", justifyContent: "center"}}>
+            <div><a href="https://www.behance.net/gallery/222874501/Sound-Design-Using-Audacity"
+             target="_blank"
+             rel="noopener noreferrer"><img src={Audaciy} alt="" style={{ height: "250px", width: "250px" }}/></a>
+             </div>
+            <div><a href="https://www.behance.net/gallery/224355911/Game-Design"
+             target="_blank"
+             rel="noopener noreferrer"><img src={Dice} alt="" style={{ height: "250px", width: "250px", marginLeft: "40px", marginRight: "40px" }}/></a>
+             </div>
+            <div><a href="https://www.behance.net/gallery/222872783/Algorithmic-Soundscape"
+             target="_blank"
+             rel="noopener noreferrer"><img src={Isle} alt="" style={{ height: "250px", width: "250px" }}/></a>
+             </div>
+
+             
+
+          </div>
+          <div style={{ display: "flex", marginTop: "1%"}}>
+             <span style={{marginRight: "16%", marginLeft:"22%"}}>Sound Design</span>
+             <span>Game Design</span>
+             <span style={{ marginLeft: "13%"}}>Algorithmic Soundscape</span>
+
+             </div>
+          
+          
+
         </div>
       </div>
 
